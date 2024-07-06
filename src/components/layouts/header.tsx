@@ -43,8 +43,9 @@ export const NavigationHeader: FC = () => {
                                 <img src={logo2.src} className="h-12"></img>
                             </div>
 
-                            <div className=" flex justify-center w-full items-center">
-                                <div className="flex justify-center passion-one-bold text-xl ">
+                            <div className=" flex justify-center w-full items-center gap-4">
+                                <div className="flex justify-center passion-one-bold text-xl 
+                                gap-4">
 
                                     <div className="flex">
                                         <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md font-medium">HOME</a>
@@ -61,16 +62,16 @@ export const NavigationHeader: FC = () => {
                                 <div className="flex">
                                     <img src={logo2.src} className="h-12"></img>
                                 </div>
-                                <div className="flex justify-center">
+                                <div className="flex justify-center passion-one-bold text-xl   gap-4">
 
                                     <div className="flex ">
-                                        <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md text-sm font-medium">BLOG</a>
+                                        <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md font-medium">BLOG</a>
                                     </div>
                                     <div className="flex">
-                                        <a href="#" className=" text-white hover:text-white px-3 py-2 rounded-md text-sm font-medium">SHOP</a>
+                                        <a href="#" className=" text-white hover:text-white px-3 py-2 rounded-md font-medium">SHOP</a>
                                     </div>
                                     <div className="flex">
-                                        <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md text-sm font-medium">LANDING</a>
+                                        <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md font-medium">LANDING</a>
                                     </div>
                                     <div className="flex"></div>
 
@@ -96,20 +97,7 @@ export const NavigationHeader: FC = () => {
                     </div>
                 </nav>
 
-                {/* <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-            const mobileMenu = document.getElementById('mobile-menu');
 
-            menuButton.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-                const expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
-                menuButton.setAttribute('aria-expanded', !expanded);
-
-                menuButton.querySelectorAll('svg').forEach(svg => svg.classList.toggle('hidden'));
-            });
-        });
-    </script> */}
             </div>
         </div>
     )
