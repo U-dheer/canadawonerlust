@@ -6,10 +6,10 @@ import contact2 from "../../../../public/assets/h1-img-01.png"
 export const ContactUs: FC = () => {
 
     return <>
-        <div className="w-full">
-            <div className="w-full h-full flex justify-center relative p-0">
-                <img src={contact1.src} alt="" className="hidden lg:block aspect-video object-cover object-top" />
-                <img src={contact1.src} alt="" className="block lg:hidden aspect-video object-cover object-top" />
+        <div className="w-full min-h-[140vh] lg:min-h-screen relative my-10">
+            <div className="w-full h-full flex justify-center p-0 absolute top-0 left-0 ">
+                <img src={contact1.src} alt="" className="hidden lg:block object-fill object-top" />
+                <img src={contact1.src} alt="" className="block lg:hidden h-full object-fill" />
 
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
 
@@ -44,3 +44,7 @@ export const ContactUs: FC = () => {
         </div>
     </>
 }
+
+
+
+

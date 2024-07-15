@@ -1,10 +1,9 @@
 import type { FC } from "react";
-import logo2 from "../../../public/assets/logo2.png";
-import { ImageOff, Import, Mail, Phone } from "lucide-react";
-import Youtube from "../../../public/assets/youtube.svg"
-import Twitter from "../../../public/assets/twitter.svg";
-import Facebook from "../../../public/assets/facebook.svg";
-import Instagram from "../../../public/assets/instagram.svg";
+import logo2 from "../../../public/assets/lgo (2).png";
+import { ImageOff, Import, Mail, Map, Phone, Search } from "lucide-react";
+
+import { Input } from "../../../components/ui/input";
+// import { Input } from "@/components/ui/input"
 
 export const NavigationHeader: FC = () => {
 
@@ -15,7 +14,7 @@ export const NavigationHeader: FC = () => {
                 <nav className="opacity-1">
                     <div className=" flex flex-col items-center justify-between sm:items-stretch sm:justify-start p-4 ">
 
-                        <div className=" flex items-center justify-between">
+                        {/* <div className=" flex items-center justify-between">
                             <div className="flex gap-6 pb-4 playwrite-gb">
                                 <span className="text-white flex items-center ">
                                     <Phone className=" size-4 mr-2" />
@@ -36,11 +35,15 @@ export const NavigationHeader: FC = () => {
 
 
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="flex w-full border-b border-t py-6">
-                            <div className="flex">
-                                <img src={logo2.src} className="h-12"></img>
+                            <div className="flex  items-center justify-center ">
+                                <div className="">
+                                    <Map className=" text-white  " />
+                                </div>
+                                <a href="#" className=" text-white  hover:text-white px-3 py-2 rounded-md font-medium passion-one-bold text-xl">DESTINATION</a>
+
                             </div>
 
                             <div className=" flex justify-center w-full items-center gap-4">
@@ -59,8 +62,8 @@ export const NavigationHeader: FC = () => {
                                     <div className="flex"></div>
 
                                 </div>
-                                <div className="flex">
-                                    <img src={logo2.src} className="h-12"></img>
+                                <div className="flex size-32 items-center">
+                                    <img src={logo2.src} className=" w-32 "></img>
                                 </div>
                                 <div className="flex justify-center passion-one-bold text-xl   gap-4">
 
@@ -78,8 +81,10 @@ export const NavigationHeader: FC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex">
-                                <img src={logo2.src} className="h-12"></img>
+                            <div className="flex items-center">
+                                {/* <img src={logo2.src} className="h-12"></img> */}
+                                <Input className="hover:opacity-100 opacity-10 transition duration-500  " placeholder="SEARCH" />
+
                             </div>
                         </div>
 

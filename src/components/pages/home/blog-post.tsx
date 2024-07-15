@@ -53,10 +53,10 @@ export const BlogPost: FC<{ blog: BlogPostType, left: boolean; }> = ({ blog: { a
         {/* </div> */}
 
 
-        <div className=" mt-20 w-[90vw] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-14">
+        <div className=" hidden mt-20 w-[70vw] mx-auto lg:grid grid-cols-1 lg:grid-cols-2 gap-x-14">
             {left ? <>{/* photo ekat */}
                 <div className="w-full h-full flex justify-center ">
-                    <img src={image.src} alt="" className=" aspect-video object-cover object-top" />
+                    <img src={image.src} alt="" className=" aspect-[3/2.2] object-cover object-top" />
                 </div>
 
                 {/* //deatails walat */}
@@ -102,8 +102,33 @@ export const BlogPost: FC<{ blog: BlogPostType, left: boolean; }> = ({ blog: { a
                 </div>
                 {/* photo ekat */}
                 <div className="w-full h-full flex justify-center ">
-                    <img src={image.src} alt="" className=" aspect-video object-cover object-top" />
+                    <img src={image.src} alt="" className=" aspect-[3/2.2] object-cover object-top" />
                 </div></>}
+        </div>
+        <div className=" mt-20 w-[90vw] mx-auto grid lg:hidden grid-cols-1 lg:grid-cols-2 gap-x-14">
+            <div className="w-full h-full flex justify-center ">
+                <img src={image.src} alt="" className=" aspect-video object-cover object-top" />
+            </div>
+            {/* //deatails walat */}
+            <div className="w-full h-full flex items-center p-4 ">
+                <div className=" w-full h-fit">
+
+                    <div className="flex playwrite-gb text-xs text-stone-500 font-extrabold">
+                        <div className="flex justify-center space-x-4">
+                            <p className="playwrite-gb flex items-center"><Calendar className="size-4 mr-2" />{Intl.DateTimeFormat("en-LK", { dateStyle: "long" }).format(date)}</p>
+                            <p className="playwrite-gb flex items-center"><Pencil className="size-4 mr-2" />{`By ${author}`}</p>
+                        </div>
+                    </div>
+
+                    <h1 className="passion-one-regular text-5xl lg:text-6xl leading-8 mt-2">{title}</h1>
+
+                    <p className=" mt-2 text-stone-500 line-clamp-6">{description}</p>
+
+                    <button className=" hover:text-white hover:bg-green-800 transition-colors duration-300 p-2 passion-one-regular uppercase mt-4">
+                        <span className=" flex items-center">read more <ArrowUpRight className=" size-6 ml-1" /></span>
+                    </button>
+                </div>
+            </div>
         </div>
 
 

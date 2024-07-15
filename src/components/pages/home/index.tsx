@@ -1,78 +1,60 @@
 import type { FC } from "react";
 import { HeroSection } from "./hero-section";
-import img1 from "../../../../public/assets/h1-clients-img-01.png"
-import img2 from "../../../../public/assets/h1-clients-img-02.png"
-import img3 from "../../../../public/assets/h1-clients-img-03.png"
-import img4 from "../../../../public/assets/h1-clients-img-04.png"
-import img5 from "../../../../public/assets/h1-clients-img-05.png"
+import img1 from "../../../../public/assets/c (1).png"
+import img2 from "../../../../public/assets/c (2).png"
+import img3 from "../../../../public/assets/c (3).png"
+import img4 from "../../../../public/assets/c (4).png"
+import img5 from "../../../../public/assets/c (5).png"
+import img6 from "../../../../public/assets/c (6).png"
 import { BlogPost } from "./blog-post";
-import Blogphoto from "../../../../public/assets/blogga.jpg"
-import Bp from "../../../../public/assets/blogp (1).jpg";
-import Bp1 from "../../../../public/assets/blogp (2).jpg"
-import Bp2 from "../../../../public/assets/blogp (3).jpg"
-import Bp3 from "../../../../public/assets/blogp (4).jpg"
-import type { BlogPostType } from "../../../../types";
+
 import { ContactUs } from "./contact-us";
+import { FeaturedSection } from "./featured-section";
+import { blogPosts } from "../../../../data";
+import { TraverEssentials } from "./travel-essentials";
+import { Places } from "./places";
 
 
 export const HomePage: FC = () => {
 
-
-    const blogPosts: BlogPostType[] = [{
-        title: "Everyday urban concrete jubgle",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero",
-        date: new Date(),
-        author: "Uditha",
-        image: Blogphoto
-    }, {
-        title: "Amazon Rainforest experience",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero",
-        date: new Date(),
-        author: "Nalin",
-        image: Bp
-    }, {
-        title: "Climbing in the swis apls",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero",
-        date: new Date(),
-        author: "Nishan",
-        image: Bp1
-    }, {
-        title: "Climbing in the swis apls",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero",
-        date: new Date(),
-        author: "Nishan",
-        image: Bp2
-    }, {
-        title: "Climbing in the swis apls",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, liberoLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero",
-        date: new Date(),
-        author: "Nishan",
-        image: Bp3
-    }];
-
     return <div>
         <HeroSection />
 
-        <div className="">
-            <div className="grid grid-cols-2 lg:grid-cols-5 w-full gap-y-14 lg:gap-y-0 ">
-                <div className=" flex justify-center">
-                    <img src={img1.src} alt=""></img>
+        <div className=" mt-28 ">
+            <div className="grid grid-cols-2 lg:grid-cols-6 w-[70vw] mx-auto gap-y-14 lg:gap-y-0 ">
+                <div className=" flex flex-col justify-center w-full items-center ">
+                    <img src={img3.src} alt="" className="max-w-32" />
+                    <div className="">1 Destinations</div>
+                    <div className="passion-one-bold text-xl">ADVENTURE</div>
                 </div>
 
-                <div className=" flex justify-center">
-                    <img src={img2.src} alt=""></img>
+                <div className=" flex flex-col justify-center items-center">
+                    <img src={img2.src} alt="" className="max-w-32" />
+                    <div className="">3 Destinations</div>
+                    <div className="passion-one-bold text-xl">BRACHES</div>
                 </div>
 
-                <div className=" flex justify-center">
-                    <img src={img3.src} alt=""></img>
+                <div className=" flex flex-col  justify-center items-center">
+                    <img src={img6.src} alt="" className="max-w-32" />
+                    <div className="">2 Destinations</div>
+                    <div className="passion-one-bold text-xl">CAMPING</div>
                 </div>
 
-                <div className=" flex justify-center">
-                    <img src={img4.src} alt=""></img>
+                <div className=" flex flex-col justify-center items-center">
+                    <img src={img5.src} alt="" className="max-w-32" />
+                    <div className="">1 Destinations</div>
+                    <div className="passion-one-bold text-xl">FRIENDLY</div>
                 </div>
 
-                <div className=" flex justify-center">
-                    <img src={img5.src} alt=""></img>
+                <div className=" flex flex-col  justify-center items-center">
+                    <img src={img1.src} alt="" className="max-w-32" />
+                    <div className="">9 Destinations</div>
+                    <div className="passion-one-bold text-xl">LOW BUDGET</div>
+                </div>
+                <div className=" flex flex-col justify-center items-center">
+                    <img src={img4.src} alt="" className="max-w-32" />
+                    <div className="">4 Destinations</div>
+                    <div className="passion-one-bold text-xl">POPULAR</div>
                 </div>
             </div>
         </div>
@@ -87,10 +69,14 @@ export const HomePage: FC = () => {
 
             </div>
         </div>
-        {blogPosts.map((blog, index) => (
+        
+        {blogPosts.slice(0, 2).map((blog, index) => (
             <BlogPost key={`blog-${index}`} blog={blog} left={index % 2 == 0} />
         ))}
 
         <ContactUs />
+        <FeaturedSection />
+        {/* <TraverEssentials /> */}
+        <Places />
     </div>
 }
